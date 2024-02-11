@@ -69,3 +69,11 @@ span.psw {
         width: 100%;
     }
 }
+/*Estilo básico de ingreso a nivel*/
+.nivel {
+    cursor: pointer; /* Cambia el cursor a una manita al pasar el ratón */
+    padding: 10px;
+    margin: 5px;
+    background-color:whitesmoke;
+    border-radius: 5px;
+}
