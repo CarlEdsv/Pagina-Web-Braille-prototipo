@@ -6,13 +6,11 @@ h2{
 input{
     text-align: center;
 }
-
 body {
     background-image: url('../imagenes/otroFondo.jpg');  /* Sube un nivel para ir a la carpeta "imagenes" */
     background-size: cover; /* Ajusta la imagen al tamaño completo del cuerpo */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
 }
-
 form {
     background-color: rgba(255, 255, 255, 0.452);
     border: 3px solid #f1f1f1;
@@ -70,18 +68,4 @@ span.psw {
     .cancelbtn {
         width: 100%;
     }
-}
-
-/*Estilo para la selección de niveles*/
-.nivel{
-    background-color:aliceblue;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-}
-
-/*Estilo para botón de siguiente nivel*/
-.next_level{
-    cursor: pointer;
 }

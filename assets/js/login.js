@@ -1,15 +1,7 @@
-var usuario1 = "YoSoyLuis"
+const botonSesion = document.getElementById("botonSesion");
 
-var contraseña1 = "12345678"
-
-function sesion(){
+ botonSesion.addEventListener("click",()=>{
     var usuario = (document.getElementById("usuario")).value;
     var contraseña = (document.getElementById("contraseña")).value;
-    if(usuario1 == usuario && contraseña1 == contraseña){
-        alert("sesion iniciada");
-        window.location.href = "main.html";
-    }
-    else{
-        alert("Error en las credenciales");
-    }
-}
+    buscar(usuario,contraseña);
+});
