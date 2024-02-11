@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
 <head>
 	<title>inicio de sesión</title>
@@ -19,7 +21,7 @@
 
 			<input id="contraseña" type="password" placeholder="Ingrese su contraseña" name="psw" required>
 
-			<button type="button" onclick="sesion()">Iniciar sesión</button>
+			<button type="button" id="botonSesion">Iniciar sesión</button>
 
 			<label>
 				<input type="checkbox" checked="checked" name="remember"> Mantener sesion iniciada
@@ -28,7 +30,19 @@
 		</div>
 	</form>
 
-	<script src="script.js"></script>
+	<!-- scrip para activar la conexion con firebase, esto hay que ponerlo en todas las paginas cuando se ocupe: -->	
+
+	<!-- iniciar conexion con firebase-->
+	<script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-compat.js"></script>
+	<script src="firebase.js"></script>
+
+	<!-- utilizar firebase authentication-->
+	<script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js"></script>
+
+	<!-- script de la pagina-->
+	<script src="login.js"></script>
+
+   
 
 </body>
 </html>
