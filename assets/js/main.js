@@ -6,5 +6,5 @@ BotonCerrar.addEventListener("click",()=>{
 
 //Función para abrir los niveles en el selector de niveles
 function ir_al_nivel(nivel){
-    window.location.href = 'niveles/Nivel' + nivel + '.html';
+    window.location.href = 'Niveles/Nivel' + nivel + '.html';
 }
