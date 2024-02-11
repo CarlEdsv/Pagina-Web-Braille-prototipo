@@ -13,18 +13,3 @@ function sesion(){
         alert("Error en las credenciales");
     }
 }
-
-
-function cerrarSesion(){
-    window.location.href = "login.html";
-}
-
-//Función para abrir los niveles en el selector de niveles
-function ir_al_nivel(nivel){
-    window.location.href = 'niveles/Nivel' + nivel + '.html';
-}
-
-//Función para ir al siguiente nivel
-function siguiente_nivel(nivel) {
-    window.location.href = 'Nivel'+(nivel + 1)+'.html';
-}

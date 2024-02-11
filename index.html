@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="Imagenes/el-salvador.png" type="image/x-icon">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="assets\css\estilos.css">
 <head>
 	<title>inicio de sesión</title>
 		
 </head>
 <body>
-	
 	<h2>Formulario de inicio de sesión</h2>
 
 	<form class="difuminado">
 
 		<div class="imgcontainer">
-			<img src="Imagenes/loginIcono.png" alt="Avatar" class="avatar">
+			<img src="assets\Imagenes\loginIcono.png" alt="Avatar" class="avatar">
 		</div>
 
 		<div class="container">
@@ -23,7 +19,7 @@
 
 			<input id="contraseña" type="password" placeholder="Ingrese su contraseña" name="psw" required>
 
-			<button type="button" id="botonSesion">Iniciar sesión</button>
+			<button type="button" onclick="sesion()">Iniciar sesión</button>
 
 			<label>
 				<input type="checkbox" checked="checked" name="remember"> Mantener sesion iniciada
