@@ -7,7 +7,7 @@ input{
     text-align: center;
 }
 body {
-    background-image: url('../imagenes/otroFondo.jpg');  /* Sube un nivel para ir a la carpeta "imagenes" */
+    background-image: url('../Imagenes/otroFondo.jpg');  /* Sube un nivel para ir a la carpeta "imagenes" */
     background-size: cover; /* Ajusta la imagen al tamaño completo del cuerpo */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
 }
