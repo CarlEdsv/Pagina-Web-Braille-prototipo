@@ -65,13 +65,18 @@ function registrar(usuario, contraseña) {
     .then((userCredential) => {
       //Usuario registrado con éxito
       const user = userCredential.user;
-      console.log("Usuario registrado:", user);
+      alert("Usuario registrado");
+      //Recarga la página despues de dos segundos
+      setTimeout(function() {
+        
+        location.reload();
+    }, 1000);
     })
     .catch((error) => {
-      // Error al registrar el usuario
+      //Error al registrar el usuario
       const errorCode = error.code;
       const errorMessage = error.message;
-      console.error("Error al registrar usuario:", errorMessage);
+      alert("Error al registrar usuario:", errorMessage);
     });
 }
 
