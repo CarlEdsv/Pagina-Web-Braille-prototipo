@@ -69,7 +69,7 @@
     </footer>
     <!-- iniciar conexion con firebase-->
 	<script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-compat.js"></script>
-    <script src="{{ asset('js/firebase.js') }}"></script>
+    <script type="module" src="{{ asset('js/firebase.js') }}"></script>
     
 
 	<!-- utilizar firebase authentication-->
