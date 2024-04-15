@@ -1,0 +1,6 @@
+body {
+	background-image: url('/imagenes/fondologin.jpg');
+	background-size: cover;
+	height: 100vh;
+	margin: -20px 0 50px;
+}

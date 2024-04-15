@@ -1,10 +1,10 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css\login.css') }}">
-    <title>Document</title>
+    <link rel="icon" href="{{asset('imagenes\icono.png')}}">
+    <title>Registro</title>
 </head>
 
 <body>
@@ -21,11 +21,12 @@
                 </div>
                 <!-- Toda la parte del registro -->
                 <span>o utiliza tu correo electrónico para registrarte</span>
-                <input  type="text" placeholder="Nombre" />
+                <input  type="text" id="nombre" placeholder="Nombre" />
                 <input id="usuarioR" type="email" placeholder="Correo" />
                 <input id="contraseñaR" type="password" placeholder="Contraseña" />
                 <button id="botonRegistrar">InscribirseR</button>
             </form>
+            
         </div>
         <div class="form-container sign-in-container">
             <form action="#">
@@ -47,26 +48,31 @@
         <!-- la parte de las animaciones y el texto :D -->
         <div class="overlay-container">
             <div class="overlay">
+
                 <div class="overlay-panel overlay-left">
                     <h1>¿Ya tienes una Cuenta?</h1>
+                    <img src="{{asset('imagenes\ajolote.gif')}}" alt="" style="height:40% ">
                     <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
                     <button class="ghost" id="signIn">Iniciar sesión</button>
                 </div>
+
                 <div class="overlay-panel overlay-right">
                     <h1>¿No estas Registrado?</h1>
+                    <img src="{{asset('imagenes\ajolote.gif')}}" style="height:40%">
                     <p>Introduce tus datos personales y comienza tu viaje con nosotros.</p>
                     <button class="ghost" id="signUp">Inscribirse</button>
                 </div>
+
             </div>
         </div>
     </div>
 
-    <footer>
+   <!--  <footer>
         <p>
-           pagina desarrollada por el mas insano de san miguel(Luis :D)
-        </p>
+           pagina en desarrollo
 
     </footer>
+    -->
     <!-- iniciar conexion con firebase-->
 	<script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-compat.js"></script>
     <script src="{{ asset('js/firebase.js') }}"></script>

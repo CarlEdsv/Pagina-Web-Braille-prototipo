@@ -19,21 +19,34 @@ firebase.database().ref('usuarios/' + "YoSoyLuis").set({
   contraseña: "12345678"
 });*/
 
-/* Leer datos
-  firebase.database().ref(primeraReferencia)
-    .orderByChild('filtro')
-    .equalTo('el valor del filtro')
-    .once('value')
-    .then((snapshot) => {
-        snapshot.forEach((childSnapshot) => {
-            //si la busqueda encontro algo
-          
-        });
-    })
-    .catch((error) => {
-      //si no encontro nada
-        
-    });*/
+
+function ObtenerDatos(Referencia, filtro) {
+  return new Promise((resolve, reject) => {
+      firebase.database().ref(Referencia)
+          .orderByKey() // Ordena por clave (en este caso, el ID del usuario)
+          .equalTo(filtro) // Filtra por el valor de filtro (en este caso, el ID del usuario)
+          .once('value')
+          .then((snapshot) => {
+              snapshot.forEach((childSnapshot) => {
+                  const usuario = childSnapshot.val().usuario;
+                  resolve(usuario); // Resuelve la promesa con el valor del usuario
+              });
+          })
+          .catch((error) => {
+              reject(error); // Rechaza la promesa con el error
+          });
+  });
+}
+
+// Llamada a la función para obtener el usuario con ID 100 y guardar el resultado en una variable
+ObtenerDatos('usuarios', '100')
+  .then((usuarioObtenido) => {
+      console.log("Usuario obtenido:", usuarioObtenido);
+      // Puedes usar usuarioObtenido para lo que necesites
+  })
+  .catch((error) => {
+      console.error("Error al obtener datos:", error);
+  });
 
 /* Actualizar datos
 firebase.database().ref('Referencia').update({
@@ -43,13 +56,19 @@ firebase.database().ref('Referencia').update({
 /* Eliminar datos
 firebase.database().ref('Referencia').remove();*/
 
-function buscar(usuario, contraseña) {
+function IniciarSesion(usuario, contraseña) {
   firebase.auth().signInWithEmailAndPassword(usuario, contraseña)
       .then((userCredential) => {
         //Redirige al usuario a la página principal
           const user = userCredential.user;
+          var nombreUsuario = user.uid;
+          
+          // Guardar el nombre de usuario en localStorage
+          localStorage.setItem("UsuarioActivo", nombreUsuario);
+
           console.log("Inicio de sesión exitoso:", user);
-          window.location.href = "main.html";
+          window.location.href = "main";
+        
       })
       .catch((error) => {
         // Muestra un mensaje de error al usuario
@@ -60,15 +79,21 @@ function buscar(usuario, contraseña) {
 }
 
 //Registrar un nuevo usuario
-function registrar(usuario, contraseña) {
-  firebase.auth().createUserWithEmailAndPassword(usuario, contraseña)
+function registrar(correo, contraseña, usuario) {
+  firebase.auth().createUserWithEmailAndPassword(correo, contraseña)
     .then((userCredential) => {
       //Usuario registrado con éxito
       const user = userCredential.user;
+
+   firebase.database().ref('usuarios/' + user.uid).set({
+        usuario: usuario
+      });
+
       alert("Usuario registrado");
+
+
       //Recarga la página despues de dos segundos
       setTimeout(function() {
-        
         location.reload();
     }, 1000);
     })
