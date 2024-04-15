@@ -12,7 +12,7 @@
     <div class="container" id="container">
         <div class="form-container sign-up-container">
             <form action="#">
-                <h1>crea una cuenta</h1>
+                <h1>Crea una cuenta</h1>
                 <!-- enlaces que voy a utilizar cuando implemente otro tipos de inicio de sesion-->
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -20,7 +20,7 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <!-- Toda la parte del registro -->
-                <span>o utiliza tu correo electrónico para registrarte</span>
+                <span>O utiliza tu correo electrónico para registrarte</span>
                 <input  type="text" id="nombre" placeholder="Nombre" />
                 <input id="usuarioR" type="email" placeholder="Correo" />
                 <input id="contraseñaR" type="password" placeholder="Contraseña" />
@@ -37,7 +37,7 @@
                     <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <span>o usa tu correo</span>
+                <span>O usa tu correo</span>
                 <!-- toda la parte del inicio de sesion-->
                 <input id="usuario" type="email" placeholder="Correo" />
                 <input id="contraseña" type="password" placeholder="Contraseña" />
