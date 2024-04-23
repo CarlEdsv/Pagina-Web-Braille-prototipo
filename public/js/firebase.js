@@ -19,7 +19,6 @@ firebase.database().ref('usuarios/' + "YoSoyLuis").set({
   contraseña: "12345678"
 });*/
 
-
 function ObtenerDatos(Referencia, filtro) {
   return new Promise((resolve, reject) => {
       firebase.database().ref(Referencia)
@@ -38,8 +37,8 @@ function ObtenerDatos(Referencia, filtro) {
   });
 }
 
-// Llamada a la función para obtener el usuario con ID 100 y guardar el resultado en una variable
-ObtenerDatos('usuarios', '100')
+// Llamada a la función para obtener el usuario con ID AMfYwXNJQIOrv6FZjVXlGSZ5Hah2 y guardar el resultado en una variable
+ObtenerDatos('usuarios', 'AMfYwXNJQIOrv6FZjVXlGSZ5Hah2')
   .then((usuarioObtenido) => {
       console.log("Usuario obtenido:", usuarioObtenido);
       // Puedes usar usuarioObtenido para lo que necesites
@@ -47,6 +46,7 @@ ObtenerDatos('usuarios', '100')
   .catch((error) => {
       console.error("Error al obtener datos:", error);
   });
+
 
 /* Actualizar datos
 firebase.database().ref('Referencia').update({

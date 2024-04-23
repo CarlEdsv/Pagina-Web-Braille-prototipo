@@ -7,7 +7,7 @@
     <title>Registro</title>
 </head>
 
-<body>
+<body class="body">
 
     <div class="container" id="container">
         <div class="form-container sign-up-container">
