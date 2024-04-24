@@ -47,6 +47,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #F6F6F6;
 }
 
 .boletines{
@@ -59,6 +60,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ff3d96;
 
 }
 
@@ -68,10 +70,13 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #F6F6F6;
 
 }
 
 .bg-custom {
     background-color: #F6F6F6;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #F6F6F6;
+
 }

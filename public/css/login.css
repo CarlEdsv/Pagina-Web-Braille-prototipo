@@ -71,7 +71,7 @@ button.ghost {
 }
 
 form {
-	background-color: #02B4EB;
+	background-color: #02c0fc;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -79,6 +79,7 @@ form {
 	padding: 0 50px;
 	height: 100%;
 	text-align: center;
+	color: #F6F6F6;
 }
 
 input {
@@ -160,9 +161,9 @@ input {
 }
 
 .overlay {
-	background: #F6F6F6;
-	background: -webkit-linear-gradient(to right, #F6F6F6, #F6F6F6);
-	background: linear-gradient(to right, #F6F6F6, #F6F6F6);
+	background: #fc77a6;
+	background: -webkit-linear-gradient(to right, #fc77a6, #fc77a6);
+	background: linear-gradient(to right, #fc77a6, #fc77a6);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
