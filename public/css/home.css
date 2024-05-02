@@ -1,0 +1,100 @@
+
+html{
+    font-family:'Roboto';
+}
+
+body {
+    background-color: #02C0FC;
+}
+
+.caja{
+    background-color: #FF3D96;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 50%; /* La imagen ocupa el ancho completo de la columna */
+    height: auto; /* Mantiene la relación de aspecto */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio disponible sin distorsión */
+}
+
+.titulo, #frase, .descripcion{
+    color: white;    
+}
+
+#frase{
+    font-style: italic;
+}
+
+.plan{
+    background-color: white;
+    border-radius: 10px;
+    margin: 5%;
+    margin-bottom: 10px;
+    border-color:#6E3980 ;
+    border-style: solid;
+}
+
+.tipo-plan{
+    background-color: #FEA2C7;
+    margin-top: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color:#6E3980 ;
+    border-style: solid;
+}
+
+#precio{
+    color: #02C0FC;
+}
+
+.caracteristicas{
+    margin-left: 0%;
+    color: #FF3D96;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.caracteristicas .cheque {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; 
+    /*vertical-align: middle;*/
+}
+
+.bases .imagen{
+    margin-top: 5%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 3%;
+}
+
+.base{
+    background-color: #FF3D96;
+}
+
+#base-medio{
+    border-radius: 0px;
+    border-style: solid;
+    border-top: #6E3980;
+    border-bottom: #6E3980;
+}
+
+#base-izquierda{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#base-derecha{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+/*
+.bases .titulo{
+    border-style: solid;
+    border-color: #6E3980;
+    border-top: #FF3D96;
+    border-left: #FF3D96;
+    border-right: #FF3D96;
+}*/
