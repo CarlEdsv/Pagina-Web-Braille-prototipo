@@ -14,40 +14,12 @@
     <link rel="stylesheet" href="{{asset('css/home.css')}}">
 </head>
 <body>
- <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="{{asset('imagenes/icono.png')}}" alt="Bootstrap" width="30" height="24">
-            </a>
-            <p id="pepeElDinoSaurio"></p>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Jugar Ahora</a>
-                    </li>
-    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Actualizaciones</a>
-                    </li>
-    
+ <!-- navbar -->  
                     <li class="nav-item">
                         <a id="show-login-button" class="btn btn-primary" role="button" aria-disabled="true">Iniciar
                             Sesion</a>
                     </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+         
 
     <!--Sección 1-->
     <div class="container caja mt-3">
