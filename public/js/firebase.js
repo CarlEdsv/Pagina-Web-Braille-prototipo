@@ -38,14 +38,14 @@ function ObtenerDatos(Referencia, filtro) {
 }
 
 // Llamada a la función para obtener el usuario con ID AMfYwXNJQIOrv6FZjVXlGSZ5Hah2 y guardar el resultado en una variable
-ObtenerDatos('usuarios', 'AMfYwXNJQIOrv6FZjVXlGSZ5Hah2')
+/*ObtenerDatos('usuarios', 'AMfYwXNJQIOrv6FZjVXlGSZ5Hah2')
   .then((usuarioObtenido) => {
       console.log("Usuario obtenido:", usuarioObtenido);
-      // Puedes usar usuarioObtenido para lo que necesites
   })
   .catch((error) => {
       console.error("Error al obtener datos:", error);
   });
+  */
 
 
 /* Actualizar datos
@@ -66,8 +66,8 @@ function IniciarSesion(usuario, contraseña) {
           // Guardar el nombre de usuario en localStorage
           localStorage.setItem("UsuarioActivo", nombreUsuario);
 
-          console.log("Inicio de sesión exitoso:", user);
-          window.location.href = "main";
+         // console.log("Inicio de sesión exitoso:", user);
+          window.location.href = "/";
         
       })
       .catch((error) => {
@@ -84,18 +84,19 @@ function registrar(correo, contraseña, usuario) {
     .then((userCredential) => {
       //Usuario registrado con éxito
       const user = userCredential.user;
+      var nombreUsuario = user.uid;
+      localStorage.setItem("UsuarioActivo", nombreUsuario);
 
-   firebase.database().ref('usuarios/' + user.uid).set({
+        firebase.database().ref('usuarios/' + user.uid).set({
         usuario: usuario
       });
 
       alert("Usuario registrado");
 
-
       //Recarga la página despues de dos segundos
       setTimeout(function() {
         location.reload();
-    }, 1000);
+    }, 500);
     })
     .catch((error) => {
       //Error al registrar el usuario

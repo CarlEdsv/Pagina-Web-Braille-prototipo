@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-.body {
+.bodyLogin {
 	background-image: url('/imagenes/fondologin.jpg');
 	background-size: cover;
 	display: flex;
@@ -16,16 +16,16 @@
 	margin: -20px 0 50px;
 }
 
-h1 {
+.h1Login {
 	font-weight: bold;
 	margin: 0;
 }
 
-h2 {
+.h2Login {
 	text-align: center;
 }
 
-p {
+.pLogin {
 	font-size: 14px;
 	font-weight: 100;
 	line-height: 20px;
@@ -33,18 +33,18 @@ p {
 	margin: 20px 0 30px;
 }
 
-span {
+.spanLogin {
 	font-size: 12px;
 }
 
-a {
+.aLogin {
 	color: #333;
 	font-size: 14px;
 	text-decoration: none;
 	margin: 15px 0;
 }
 
-button {
+.buttonLogin {
 	border-radius: 20px;
 	border: 1px solid #cccccc;
 	background-color: #cccccc;
@@ -57,20 +57,20 @@ button {
 	transition: transform 80ms ease-in;
 }
 
-button:active {
+.buttonLogin:active {
 	transform: scale(0.95);
 }
 
-button:focus {
+.buttonLogin:focus {
 	outline: none;
 }
 
-button.ghost {
+.buttonLogin.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
 }
 
-form {
+.formLogin {
 	background-color: #02c0fc;
 	display: flex;
 	align-items: center;
@@ -82,7 +82,7 @@ form {
 	color: #F6F6F6;
 }
 
-input {
+.inputLogin {
 	background-color: #eee;
 	border: none;
 	padding: 12px 15px;
@@ -227,27 +227,3 @@ input {
 	width: 40px;
 }
 
-footer {
-    background-color: #8caaa2;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
-}
