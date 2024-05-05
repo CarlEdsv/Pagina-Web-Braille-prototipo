@@ -1,0 +1,50 @@
+body {
+    background-image: url('/imagenes/lago.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    /*background-color: #02C0FC;*/
+}
+
+.imagen {
+    width: 75%;
+    height: auto; /* Mantiene la relación de aspecto */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio disponible sin distorsión */
+    border-radius: 30px;
+}
+
+.historia{
+    color: white;
+    font-size: 30px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Borde negro */
+    background-color: rgba(2, 192, 252, 0.3); /* Fondo con transparencia */
+    border-radius: 30px;
+}
+
+.braille {
+    background-color: white;
+    border: 5px solid black;
+    width: 125px;
+    height: 156.25px;
+}
+
+.dot {
+    width: 30px;  /* Tamaño del punto */
+    height: 30px; /* Tamaño del punto */
+    border-radius: 50%; /* Hacer el punto redondo */
+    border: 5px solid black;
+}
+
+.filled {
+    background-color: #FF3D96; /* Punto relleno */
+    
+}
+
+.empty {
+    background-color: transparent; /* Punto vacío */
+}
+
+.boton{
+    background-color: white;
+    border-radius: 30px;
+}

@@ -24,3 +24,7 @@ Route::get('main', function () {
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('lecciones', function () {
+    return view('lecciones');
+});
