@@ -15,39 +15,39 @@
 </head>
 <body>
  <!-- navbar -->
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Prácticas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Capacitaciones Pro</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Ver Perfil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Iniciar Sesión</a>
-      
-        <li class="nav-item">
-        <a id="show-login-button" class="btn btn-primary" role="button" aria-disabled="true">Iniciar
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{{asset('imagenes/icono.png')}}" alt="Bootstrap" width="30" height="24">
+            </a>
+            <p id="pepeElDinoSaurio"></p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Jugar Ahora</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Actualizaciones</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a id="show-login-button" class="btn btn-primary" role="button" aria-disabled="true">Iniciar
                             Sesion</a>
-        </li>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!--Sección 1-->
     <div class="container caja mt-3">
         <div class="row">
@@ -252,10 +252,8 @@
       <script src="{{ asset('js/firebase.js') }}"></script>
       <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js"></script>
       <script src="{{ asset('js/login.js') }}"></script>
-      <script src="{{ asset('js/home.js') }}"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 
+      <script src="{{ asset('js/home.js') }}"></script>
 
 
 
