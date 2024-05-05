@@ -44,10 +44,6 @@
                         <a id="show-login-button" class="btn btn-primary" role="button" aria-disabled="true">Iniciar
                             Sesion</a>
                     </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <!--Sección 1-->
     <div class="container caja mt-3">
         <div class="row">
