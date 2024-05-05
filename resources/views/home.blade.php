@@ -15,10 +15,30 @@
 </head>
 <body>
  <!-- navbar -->  
-                    <li class="nav-item">
-                        <a id="show-login-button" class="btn btn-primary" role="button" aria-disabled="true">Iniciar
-                            Sesion</a>
-                    </li>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Logo</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Prácticas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Capacitaciones Pro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ver Perfil</a>
+        <li class="nav-item">
+        <a id="show-login-button" class="btn btn-primary" role="button" aria-disabled="true">Iniciar Sesion</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
          
 
     <!--Sección 1-->
@@ -225,7 +245,7 @@
       <script src="{{ asset('js/firebase.js') }}"></script>
       <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js"></script>
       <script src="{{ asset('js/login.js') }}"></script>
-
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="{{ asset('js/home.js') }}"></script>
 
 
