@@ -403,3 +403,25 @@ body {
 .bg-custom {
     background-color: rgba(255, 255, 255, 0.9) !important; /* Fondo semi-transparente */
 }
+
+/* Estilos personalizados */
+.navbar {
+	background-color: #ddd; /* Color de fondo gris */
+  }
+  
+  .navbar-brand {
+	color: #ff69b4; /* Color del texto del logo */
+  }
+  
+  .nav-link {
+	color: #ff69b4 !important; /* Color del texto de los enlaces */
+  }
+  
+  .nav-link:hover {
+	color: #cc397b !important; /* Color del texto de los enlaces al pasar el mouse */
+  }
+  
+  .navbar-toggler-icon {
+	background-color: #ff69b4; /* Color del ícono del botón de alternancia */
+  }
+  
