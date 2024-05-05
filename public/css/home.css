@@ -418,3 +418,13 @@ body {
 	color: #cc397b !important; /* Color del texto de los enlaces al pasar el mouse */
   }
   
+  .social-icons a {
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: gray;
+}
+
+
+  
