@@ -37,15 +37,17 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Iniciar Sesión</a>
-                    <li class="nav-item">
-                        <a id="show-login-button" class="btn btn-primary" role="button" aria-disabled="true">Iniciar
+      
+        <li class="nav-item">
+        <a id="show-login-button" class="btn btn-primary" role="button" aria-disabled="true">Iniciar
                             Sesion</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        
     <!--Sección 1-->
     <div class="container caja mt-3">
         <div class="row">
@@ -250,10 +252,11 @@
       <script src="{{ asset('js/firebase.js') }}"></script>
       <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js"></script>
       <script src="{{ asset('js/login.js') }}"></script>
-
       <script src="{{ asset('js/home.js') }}"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+
 
 
 </body>
