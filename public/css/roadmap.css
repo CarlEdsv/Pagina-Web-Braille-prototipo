@@ -1,0 +1,59 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del roadmap */
+.roadmap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.path {
+    width: 2px;
+    height: 200px; /* Ajusta según sea necesario */
+    background-color: #333;
+    position: relative;
+    margin-left: 40px;
+}
+
+/* Estilos de las secciones */
+.section {
+    margin: 20px 0;
+}
+
+.section h2 {
+    color: #333;
+}
+
+.section p {
+    color: #666;
+}
