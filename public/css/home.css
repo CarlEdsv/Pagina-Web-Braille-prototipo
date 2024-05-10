@@ -362,8 +362,6 @@ body {
 	width: 40px;
 }
 
-
-
 /* navbar */
 .navbar {
     transition: all 0.3s ease; /* Animación al desplazar */
@@ -403,3 +401,30 @@ body {
 .bg-custom {
     background-color: rgba(255, 255, 255, 0.9) !important; /* Fondo semi-transparente */
 }
+
+.navbar {
+	background-color: #ddd; /* Color de fondo gris */
+  }
+  
+  .navbar-brand {
+	color: #ff69b4; /* Color del texto del logo */
+  }
+  
+  .nav-link {
+	color: #ff69b4 !important; /* Color del texto de los enlaces */
+  }
+  
+  .nav-link:hover {
+	color: #cc397b !important; /* Color del texto de los enlaces al pasar el mouse */
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: gray;
+}
+
+
+  

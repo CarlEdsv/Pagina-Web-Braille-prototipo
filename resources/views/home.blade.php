@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="{{asset('css/home.css')}}">
 </head>
 <body>
- <!-- navbar -->
+    <!-- navbar -->
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -39,7 +40,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Actualizaciones</a>
                     </li>
-    
+                        <a class="nav-link" href="#">Prácticas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Capacitaciones Pro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ver Perfil</a>
+                    </li>
                     <li class="nav-item">
                         <a id="show-login-button" class="btn btn-primary" role="button" aria-disabled="true">Iniciar
                             Sesion</a>
@@ -48,7 +56,6 @@
             </div>
         </div>
     </nav>
-
     <!--Sección 1-->
     <div class="container caja mt-3">
         <div class="row">
@@ -247,14 +254,31 @@
     </div>
   </div>
   
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p>Derechos Reservados &copy; 2024</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100074249683271" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
   <!------------------ fin login ------------------->
 
       <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-compat.js"></script>
       <script src="{{ asset('js/firebase.js') }}"></script>
       <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js"></script>
       <script src="{{ asset('js/login.js') }}"></script>
-
       <script src="{{ asset('js/home.js') }}"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+
 
 
 
