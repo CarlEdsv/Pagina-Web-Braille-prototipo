@@ -30,7 +30,7 @@
                 <ul class="navbar-nav ms-auto">
                     
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
     
                     <li class="nav-item">
@@ -40,7 +40,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Actualizaciones</a>
                     </li>
-                        <a class="nav-link" href="#">Prácticas</a>
+                        <a class="nav-link" href="roadmap">Prácticas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Capacitaciones Pro</a>

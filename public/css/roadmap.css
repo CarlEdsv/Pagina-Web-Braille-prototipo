@@ -1,59 +1,110 @@
-/* Estilos generales */
+html{
+    font-family:'Roboto';
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    padding-top: 80px; 
+    background-color: #02C0FC;
 }
 
-/* Estilos del roadmap */
-.roadmap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+.boletines{
+	display: grid;
+	grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2, 2fr); 
+    gap: 10px;
+	background-color: #F6F6F6;
+	margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ff3d96;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+.boletin {
+    background-color: #ff3d96;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #f6f6f6;
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Alinear elementos verticalmente */
+    align-items: center; /* Centrar elementos horizontalmente */
+    max-width: 400px; /* Ancho máximo para evitar que ocupe demasiado espacio */
 }
 
-ul li {
-    margin: 0 10px;
+img {
+    height: 50%;
+    max-width: 100%; /* Ajustar imagen al ancho máximo del contenedor */
 }
 
-a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
-    border: 1px solid #333;
-    border-radius: 5px;
+h3 {
+    margin-bottom: 10px; /* Espacio adicional entre el título y la imagen */
 }
 
-a:hover {
-    background-color: #333;
-    color: #fff;
+/* navbar */
+.navbar {
+    transition: all 0.3s ease; /* Animación al desplazar */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
-.path {
-    width: 2px;
-    height: 200px; /* Ajusta según sea necesario */
-    background-color: #333;
-    position: relative;
-    margin-left: 40px;
+.navbar-light .navbar-nav .nav-link {
+    color: #333; /* Color de los enlaces */
 }
 
-/* Estilos de las secciones */
-.section {
-    margin: 20px 0;
+.navbar-light .navbar-toggler-icon {
+    background-color: #333; /* Color del icono del botón de menú */
 }
 
-.section h2 {
-    color: #333;
+.navbar-light .navbar-brand {
+    color: #333; /* Color del texto del brand */
 }
 
-.section p {
-    color: #666;
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus {
+    color: #555; /* Color del brand al pasar el mouse o enfocar */
 }
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #555; /* Color de los enlaces al pasar el mouse o enfocar */
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #555; /* Color de los enlaces activos o desplegados */
+}
+
+.bg-custom {
+    background-color: rgba(255, 255, 255, 0.9) !important; /* Fondo semi-transparente */
+}
+
+.navbar {
+	background-color: #ddd; /* Color de fondo gris */
+  }
+  
+  .navbar-brand {
+	color: #ff69b4; /* Color del texto del logo */
+  }
+  
+  .nav-link {
+	color: #ff69b4 !important; /* Color del texto de los enlaces */
+  }
+  
+  .nav-link:hover {
+	color: #cc397b !important; /* Color del texto de los enlaces al pasar el mouse */
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: gray;
+}
+
+
+  

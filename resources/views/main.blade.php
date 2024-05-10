@@ -173,11 +173,6 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue risus lectus, in fringilla enim bibendum ac.
   </div>
 
-
-
-
-
-
 </section>
 
 
