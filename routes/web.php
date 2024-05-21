@@ -28,3 +28,6 @@ Route::get('/', function () {
 Route::get('roadmap', function () {
     return view('roadmap');
 });
+Route::get('lecciones', function () {
+    return view('lecciones');
+});

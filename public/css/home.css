@@ -14,7 +14,7 @@ body {
 }
 
 .logo {
-    width: 50%; /* La imagen ocupa el ancho completo de la columna */
+    width: 50%; /* La imagen ocupa x% de ancho de la columna */
     height: auto; /* Mantiene la relación de aspecto */
     object-fit: cover; /* Asegura que la imagen cubra todo el espacio disponible sin distorsión */
 }
