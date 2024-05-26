@@ -11,7 +11,7 @@
     <!--Icono -->
     <link rel="icon" href="{{asset('imagenes\icono.png')}}">
     <!--Hoja de estilos -->
-    <link rel="stylesheet" href="{{asset('css/home.css')}}">
+    <link rel="stylesheet" href="{{asset('css/home.css')}}">///
 </head>
 <body>
     <!-- navbar -->
@@ -30,7 +30,7 @@
                 <ul class="navbar-nav ms-auto">
                     
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
     
                     <li class="nav-item">

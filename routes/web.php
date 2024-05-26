@@ -31,3 +31,7 @@ Route::get('roadmap', function () {
 Route::get('lecciones', function () {
     return view('lecciones');
 });
+
+Route::get('profile', function () {
+    return view('profile');
+});
