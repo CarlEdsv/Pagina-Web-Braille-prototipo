@@ -1,50 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="{{asset('imagenes\icono.png')}}">
-    <link rel="stylesheet" href="{{asset('css/user.css')}}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <title>Perfil de usuario</title>
-</head>
-<body>
- <!------------------ navbar ------------------->
- <nav class="navbar navbar-expand-lg bg-custom">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"> <img src="{{asset('imagenes\icono.png')}}" alt="Bootstrap" width="30" height="24"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="navbar-nav"></li>
+<!-- resources/views/home.blade.php -->
+@extends('layout')
 
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
+@section('title', 'Perfil')
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Jugar Ahora</a>
-              </li>
+@section('stylesheet')
+<link rel="stylesheet" href="{{asset('css/user.css')}}">
+@endsection
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Actualizaciones</a>
-              </li>
-
-              <li class="nav-item">
-                        <a class="nav-link" href="#">Ver Perfil</a>
-                    </li>
-
-              <li class="nav-item">
-                <a id="show-login-button" class="btn btn-primary" role="button" aria-disabled="true">Iniciar Sesion </a>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </nav>
-<!------------------ fin navbar ------------------->    
+@section('content')
 
 <!------------------ User Profile -------------------> 
 <div class="profile-container">
@@ -87,6 +50,4 @@
         }
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
     </script>
-
-</body>
-</html>
+@endsection

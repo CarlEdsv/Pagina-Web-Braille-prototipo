@@ -28,7 +28,7 @@ Route::get('/', function () {
 Route::get('roadmap', function () {
     return view('roadmap');
 });
-Route::get('lecciones', function () {
+Route::get('leccion-1', function () {
     return view('lecciones');
 });
 
