@@ -62,119 +62,6 @@
     color: gray;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #02C0FC;
-    height: 100vh;
-    margin: 0;
-}
-
-.profile-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    width: 800px;
-}
-
-.left-section, .right-section {
-    flex: 5;
-    padding: 10px;
-}
-
-.left-section {
-    border-right: 1px solid #e0f0f0;
-}
-
-.profile-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.profile-image img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.upload-btn {
-    margin-top: 10px;
-}
-
-.achievements {
-    text-align: center;
-}
-
-.stars {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    margin-bottom: 10px;
-}
-
-.stars span {
-    font-size: 24px;
-    color: #ffcc00;
-}
-
-.bio {
-    margin-bottom: 20px;
-}
-
-.social-links {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-.social-links a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #0077b5; /* Color for LinkedIn */
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.social-links a.facebook {
-    background-color: #3b5998;
-}
-
-.social-links a.twitter {
-    background-color: #1da1f2;
-}
-
-.social-links a.instagram {
-    background-color: #e4405f;
-}
-
-.social-links a:hover {
-    opacity: 0.8;
-}
-
-.more-details {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.more-details a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #007bff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.more-details a:hover {
-    background-color: #0056b3;
-}
-
-
 /* login */
 .content {
     background-size: cover;
@@ -435,3 +322,106 @@ body {
 	height: 40px;
 	width: 40px;
 }
+
+/* V2 Perfil de Usuario*/  
+
+body {
+	font-family: Arial, sans-serif;
+}
+.container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+.profile-photo {
+	text-align: center;
+}
+.profile-photo input[type="file"] {
+	display: none;
+}
+.profile-photo label {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 20px;
+	background-color: #007BFF;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.ratings-progress {
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	border-radius: 5px;
+}
+.stars {
+	display: flex;
+	flex-direction: column;
+}
+.stars span {
+	font-size: 20px;
+	color: gold;
+}
+.levels-progress {
+	margin-top: 20px;
+}
+.levels-progress h4, .levels-progress p {
+	margin: 0;
+}
+.progress-bar {
+	width: 100%;
+	background-color: #e0e0e0;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.progress-bar div {
+	height: 20px;
+	width: 75%; /* Cambiar este valor para reflejar el progreso */
+	background-color: #76c7c0;
+}
+.bio-section {
+	margin-top: 20px;
+}
+.bio-section textarea {
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	resize: none;
+}
+.bio-section button {
+	display: block;
+	margin-top: 10px;
+	padding: 10px 20px;
+	background-color: #28a745;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.social-buttons {
+	margin-top: 20px;
+	display: flex;
+	gap: 10px;
+}
+.social-buttons a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #ccc;
+	color: white;
+	border-radius: 50%;
+	font-size: 20px;
+}
+.social-buttons a.twitter { background-color: #1DA1F2; }
+.social-buttons a.facebook { background-color: #3b5998; }
+.social-buttons a.linkedin { background-color: #0077b5; }
+.social-buttons a.instagram { background-color: #E4405F; }
