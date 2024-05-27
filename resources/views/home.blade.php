@@ -10,7 +10,7 @@
 @section('content')
 
     <!--Sección 1-->
-    <div class="container caja mt-3">
+    <div class="container caja">
         <div class="row">
             <!--Sección de Logo-->
             <div class="col-sm-4 text-center">
