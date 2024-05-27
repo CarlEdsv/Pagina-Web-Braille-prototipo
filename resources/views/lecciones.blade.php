@@ -1,7 +1,7 @@
 <!-- resources/views/home.blade.php -->
 @extends('layout')
 
-@section('title', 'Home')
+@section('title', 'Leccion 1')
 
 @section('stylesheet')
 <link rel="stylesheet" href="{{asset('css/lecciones.css')}}">
@@ -49,6 +49,9 @@
             <p class="">
                 Empezaron por aprender las primeras letras del alfabeto:
             </p>
+            <p class="">
+                A es un solo punto en la parte superior izquierda
+            </p>
             <!--tabla-->
             <div class="row">
                 <div class="col-4 text-center">
@@ -84,9 +87,12 @@
                         </div>
                 </div>
             </div>
+            <p class="">
+            E tiene dos puntos, uno se mantiene arriba y el otro se deja ca-Eee-r
+            </p>
             <div class="row">
                 <div class="col-4 text-center">
-                    <h1>B</h1>
+                    <h1>E</h1>
                 </div>
                 <div class="col-8 text-center">
                         <!-- Plantilla de letra en Braille -->
@@ -97,6 +103,43 @@
                                 </div>
                                 <div class="col">
                                     <div class="dot empty"></div> <!-- Segundo punto -->
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <div class="dot empty"></div> <!-- Tercer punto -->
+                                </div>
+                                <div class="col">
+                                    <div class="dot filled"></div> <!-- Cuarto punto -->
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <div class="dot empty"></div> <!-- Quinto punto -->
+                                </div>
+                                <div class="col">
+                                    <div class="dot empty"></div> <!-- Sexto punto -->
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <p class="">
+                En cambio la I comienza más abajo, para luego subIiiir
+            </p>
+            <div class="row">
+                <div class="col-4 text-center">
+                    <h1>I</h1>
+                </div>
+                <div class="col-8 text-center">
+                        <!-- Plantilla de letra en Braille -->
+                        <div class="container braille mt-2">
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <div class="dot empty"></div> <!-- Primer punto -->
+                                </div>
+                                <div class="col">
+                                    <div class="dot filled"></div> <!-- Segundo punto -->
                                 </div>
                             </div>
                             <div class="row mt-3">
@@ -118,9 +161,12 @@
                         </div>
                 </div>
             </div>
+            <p class="">
+                A la letra letra O le gusta el "zig zag"
+            </p>
             <div class="row">
                 <div class="col-4 text-center">
-                    <h1>C</h1>
+                    <h1>O</h1>
                 </div>
                 <div class="col-8 text-center">
                         <!-- Plantilla de letra en Braille -->
@@ -130,7 +176,44 @@
                                     <div class="dot filled"></div> <!-- Primer punto -->
                                 </div>
                                 <div class="col">
-                                    <div class="dot filled"></div> <!-- Segundo punto -->
+                                    <div class="dot empty"></div> <!-- Segundo punto -->
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <div class="dot empty"></div> <!-- Tercer punto -->
+                                </div>
+                                <div class="col">
+                                    <div class="dot filled"></div> <!-- Cuarto punto -->
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <div class="dot filled"></div> <!-- Quinto punto -->
+                                </div>
+                                <div class="col">
+                                    <div class="dot empty"></div> <!-- Sexto punto -->
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <p class="">
+                La U es parecida a la O, pero deja caer el punto de la derecha
+            </p>
+            <div class="row">
+                <div class="col-4 text-center">
+                    <h1>U</h1>
+                </div>
+                <div class="col-8 text-center">
+                        <!-- Plantilla de letra en Braille -->
+                        <div class="container braille mt-2">
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <div class="dot filled"></div> <!-- Primer punto -->
+                                </div>
+                                <div class="col">
+                                    <div class="dot empty"></div> <!-- Segundo punto -->
                                 </div>
                             </div>
                             <div class="row mt-3">
@@ -143,15 +226,18 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col">
-                                    <div class="dot empty"></div> <!-- Quinto punto -->
+                                    <div class="dot filled"></div> <!-- Quinto punto -->
                                 </div>
                                 <div class="col">
-                                    <div class="dot empty"></div> <!-- Sexto punto -->
+                                    <div class="dot filleds"></div> <!-- Sexto punto -->
                                 </div>
                             </div>
                         </div>
                 </div>
             </div>
+            <p class="">
+                ¡Listo, ahora reforzemos lo aprendido!
+            </p>
             <button class="boton" > Jugar </button>
         </div>
         

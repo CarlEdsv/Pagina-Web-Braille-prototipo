@@ -1,9 +1,13 @@
 body {
-    background-image: url('/imagenes/lago.jpg'); 
+    /*background-image: url('/imagenes/lago.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-position: center;
-    /*background-color: #02C0FC;*/
+    background-position: center;*/
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 .imagen {
@@ -45,6 +49,7 @@ body {
 }
 
 .boton{
+    margin-top: 20px;
     background-color: white;
     border-radius: 30px;
 }
