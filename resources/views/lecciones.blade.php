@@ -229,7 +229,7 @@
                                     <div class="dot filled"></div> <!-- Quinto punto -->
                                 </div>
                                 <div class="col">
-                                    <div class="dot filleds"></div> <!-- Sexto punto -->
+                                    <div class="dot filled"></div> <!-- Sexto punto -->
                                 </div>
                             </div>
                         </div>
