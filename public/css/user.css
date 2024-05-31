@@ -329,11 +329,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	background-color: #f0f0f0;
+	background-color: #00b7ff;
 }
 .container {
 	display: flex;
-	background-color: #fff;
+	background-color: 	#fff;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
@@ -366,7 +366,7 @@ body {
 .progress-bar div {
 	height: 20px;
 	width: 50%; /* Cambia este valor para actualizar el progreso */
-	background-color: #4caf50;
+	background-color: #ff00ff;
 }
 .progress-text {
 	margin-bottom: 5px;
@@ -402,7 +402,7 @@ body {
 }
 .save-button {
 	padding: 10px 20px;
-	background-color: #4caf50;
+	background-color: #ff00ff;
 	color: #fff;
 	border: none;
 	border-radius: 5px;
