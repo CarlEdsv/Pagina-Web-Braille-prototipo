@@ -11,7 +11,7 @@
 
 <!------------------ User Profile -------------------> 
 
-<div class="container">
+<div class="container principal">
         <div class="left-section">
             <div class="profile-pic"></div>
             <div class="progress-text">Progreso: 50%</div>

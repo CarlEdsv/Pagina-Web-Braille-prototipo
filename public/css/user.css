@@ -324,15 +324,12 @@
 }
 
 body {
-	font-family: Arial, sans-serif;
-	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
 	background-color: #00b7ff;
 }
-.container {
-	display: flex;
+
+.principal {
 	background-color: 	#fff;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -365,7 +362,7 @@ body {
 }
 .progress-bar div {
 	height: 20px;
-	width: 50%; /* Cambia este valor para actualizar el progreso */
+	width: 50%;
 	background-color: #ff00ff;
 }
 .progress-text {
