@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @vite(['resources/js/app.js'])
     <title>@yield('title', 'Home')</title>
     <!-- Tipo de letra -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -53,21 +54,9 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-light py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <p>Derechos Reservados &copy; 2024</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/profile.php?id=100074249683271" class="text-light me-3"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    <div id="app">
+    <footer-component></footer-component>
+    </div>
     <!-- Login Modal -->
     <div class="login-container hidden">
         <div class="login-box hidden">
