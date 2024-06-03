@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const showLoginButton = document.getElementById('show-login-button'); // Botón para mostrar el login
 
     if (UsuarioActivo) {
-        ObtenerDatos('usuarios', UsuarioActivo)
+    ObtenerDatos('usuarios', UsuarioActivo)
   .then((usuarioObtenido) => {
     showLoginButton.textContent = "¡Hola, " + usuarioObtenido + "!";
   })

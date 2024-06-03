@@ -12,12 +12,21 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 const taskList = document.getElementById("taskList");
-//resumen de las cosas que se pueden hacer en firebase, datos para el luis del futuro o para quien le pueda servir xd
 
 /*Crear datos
 firebase.database().ref('usuarios/' + "YoSoyLuis").set({
   contraseña: "12345678"
 });*/
+
+function Leer(Referencia, callback) {
+  var UsuarioActivo = localStorage.getItem("UsuarioActivo");
+  if (UsuarioActivo) {
+    firebase.database().ref('usuarios/' + UsuarioActivo + '/' + Referencia).on('value', function(snapshot) {
+      var dato = snapshot.val();
+      callback(dato);
+    });
+  }
+}
 
 function ObtenerDatos(Referencia, filtro) {
   return new Promise((resolve, reject) => {
@@ -48,10 +57,14 @@ function ObtenerDatos(Referencia, filtro) {
   */
 
 
-/* Actualizar datos
-firebase.database().ref('Referencia').update({
-  NombreDato: dato
-});*/
+  function agregar(Referencia, dato) {
+    var UsuarioActivo = localStorage.getItem("UsuarioActivo");
+    if (UsuarioActivo) {
+      var updateObj = {};
+      updateObj[Referencia] = dato;
+      firebase.database().ref('usuarios/' + UsuarioActivo).update(updateObj);
+    }
+  }
 
 /* Eliminar datos
 firebase.database().ref('Referencia').remove();*/

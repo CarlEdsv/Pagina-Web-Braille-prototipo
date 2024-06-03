@@ -120,6 +120,7 @@
     <script src="{{ asset('js/firebase.js') }}"></script>
     <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js"></script>
     <script src="{{ asset('js/login.js') }}"></script>
+    
     <script src="{{ asset('js/home.js') }}"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
 </body>

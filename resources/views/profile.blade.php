@@ -28,15 +28,17 @@
         </div>
         <div class="right-section">
             <div class="bio">
-                <textarea placeholder="Escribe tu biografía aquí..."></textarea>
-                <button class="save-button">Guardar Biografía</button>
+                <textarea id="textB" placeholder="Escribe tu biografía aquí..."></textarea>
+                <button id="saveBiografia" class="save-button">Guardar Biografía</button>
             </div>
             <div class="socials">
-                <input type="text" class="social-input" placeholder="Twitter">
-                <input type="text" class="social-input" placeholder="Facebook">
-                <input type="text" class="social-input" placeholder="Instagram">
-                <button class="save-button">Guardar Redes Sociales</button>
+                <input id="textX" type="text" class="social-input" placeholder="Twitter">
+                <input id="textF" type="text" class="social-input" placeholder="Facebook">
+                <input id="textI" type="text" class="social-input" placeholder="Instagram">
+                <button id="saveRedes" class="save-button">Guardar Redes Sociales</button>
             </div>
         </div>
     </div>
+
+<script src="{{ asset('js/perfil.js') }}"></script>
 @endsection
