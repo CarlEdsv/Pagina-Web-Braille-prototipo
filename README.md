@@ -12,7 +12,7 @@ Este proyecto aspira a ser un catalizador para la democratización del aprendiza
 
  ## integrantes del equipo
  - Luis Antonio Barrera Zelaya SMSS010722
- - Carlos Eduardo Mejia luna
+ - Carlos Eduardo Mejia luna SMSS061022
  - Bryan Daniel Escobar Umanzor SMSS045722
  - Jonathan Levi Carrillo Portillo SMSS019222
  - David Esau Claros Santos SMSS052422
