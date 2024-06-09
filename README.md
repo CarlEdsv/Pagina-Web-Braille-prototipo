@@ -22,7 +22,7 @@ Este proyecto aspira a ser un catalizador para la democratización del aprendiza
 - Laravel: 9.19
 - Vue: 3.4.27
 - vue-loader: 17.4.2
-- 
+  
 ### Dependencias de Desarrollo
 - axios: 1.7.2
 - laravel-vite-plugin: 0.7.2
